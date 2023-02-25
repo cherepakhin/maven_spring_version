@@ -24,7 +24,7 @@ public class HelloCtrlMvcTest {
     private final String root = "/hello";
 
     @Test
-    public void getHelloText() throws Exception {
+    public void getHelloCheckText() throws Exception {
         MvcResult result = mockMvc.perform(get(root + "/")
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.ALL))
@@ -36,7 +36,7 @@ public class HelloCtrlMvcTest {
     }
 
     @Test
-    public void getHelloJson() throws Exception {
+    public void getHelloCheckJson() throws Exception {
         ObjectMapper mapper = new ObjectMapper();
         MvcResult result = mockMvc.perform(get(root + "/")
                         .contentType(MediaType.APPLICATION_JSON)
