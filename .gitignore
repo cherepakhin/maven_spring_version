@@ -1,4 +1,5 @@
-target/
-!**/.mvn/wrapper/
-!**/src/main/**/target/
-!**/src/test/**/target/
+**/target/
+**/.mvn/wrapper/
+**/src/main/**/target/
+**/src/test/**/target/
+**/*.zip
