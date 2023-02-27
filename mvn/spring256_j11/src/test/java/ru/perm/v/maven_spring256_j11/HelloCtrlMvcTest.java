@@ -46,7 +46,6 @@ public class HelloCtrlMvcTest {
 
         String ans = result.getResponse().getContentAsString();
         HelloDto receivedDto = mapper.readValue(ans, HelloDto.class);
-        HelloDto expectedDto = new HelloDto(0L,"-");
-        assertEquals(expectedDto, receivedDto);
+        assertEquals(new HelloDto(0L,"-"), receivedDto);
     }
 }
